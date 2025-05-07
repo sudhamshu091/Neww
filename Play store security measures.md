@@ -5,34 +5,41 @@ Below is a focused overview of the security measures implemented by the Google P
 
 Security Measures Implemented by Google Play Store
 The Google Play Store employs a combination of automated and manual reviews, developer verification, and runtime protections to secure its ecosystem. Key measures include:
-
+<br>
 App Review and Screening:
 Every app and update undergoes automated screening for harmful behavior, with manual reviews for specific cases. Google’s policies aim to detect malware, phishing, or apps violating content guidelines.
 Policies prohibit self-updating apps outside the Play Store’s mechanism or downloading executable code from external sources, though these can be bypassed using dynamic code loading.
+<br>
 Developer Verification:
 Since August 31, 2023, new developer accounts must provide a valid D-U-N-S number, increasing accountability and reducing anonymous malicious submissions.
 App listings include enhanced “App Support” sections with developer details (e.g., company name, address, website, phone number) for transparency.
+<br>
 Play Integrity API:
 This API verifies if an app was installed from the Play Store and if the device is secure (e.g., not rooted). On Android 13+, it uses hardware-backed security signals for stronger, privacy-friendly checks.
 Apps can display a “remediation dialog” to guide users to install from the Play Store if sideloaded, ensuring controlled distribution.
+<br>
 SafetyNet Attestation:
 SafetyNet detects rooted devices or tampered system files, allowing developers to ensure apps run in secure environments.
 It provides device integrity checks to prevent apps from running on compromised devices.
+<br>
 Code Obfuscation and Protection:
 Google encourages developers to use tools like ProGuard or DexGuard to obfuscate code, making reverse engineering more difficult by scrambling method names, classes, and logic.
 APKs are not encrypted by default, but developers can implement custom encryption or runtime checks.
+<br>
 Malware Detection and Removal:
 Google uses automated tools to scan for malware, but reactive detection has been criticized, with external researchers often identifying threats like SharkBot, which evades scrutiny by releasing limited-function versions initially.
 Malicious apps are removed upon detection, and developers may be banned, though proactive monitoring is less robust compared to some competitors.
+<br>
 Data Security and Privacy:
 Developers must provide valid privacy policies, compliant with regulations like GDPR. However, studies indicate issues with missing or invalid policy links in some app categories.
 Tools like DataStore are recommended for secure storage to prevent sensitive data (e.g., credentials) from being stored client-side in plain text.
+<br>
 Google Play Protect:
 A built-in security feature on Android devices that scans apps for malicious behavior, even after installation, and can disable or remove harmful apps.
 It provides real-time protection but may miss sophisticated threats that evade initial scans.
 Reverse Engineering Methods for Google Play Store Apps
 Reverse engineering involves analyzing an Android app’s code, structure, and behavior to understand its functionality, identify vulnerabilities, or bypass security measures. Below are common methods used for apps from the Google Play Store, along with their implications.
-
+<br>
 General Reverse Engineering Process
 Obtaining the APK:
 Download the Android Package Kit (APK) directly from the Play Store, extract it from a device using tools like ADB, or source it from third-party repositories (e.g., APKMirror).
