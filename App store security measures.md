@@ -1,4 +1,24 @@
 # Neww
+Google Play Store Security Measures and Reverse Engineering Methods
+
+Security Measures:
+
+App Review and Screening: Automated and selective manual reviews scan apps for malware and policy violations, prohibiting unauthorized updates or external code execution.
+Developer Verification: New accounts require a D-U-N-S number, and app listings display developer details for transparency.
+Play Integrity API & SafetyNet: Verifies app installation source and device security (e.g., non-rooted), using hardware-backed checks on Android 13+.
+Code Obfuscation: Tools like ProGuard/DexGuard obscure code to deter reverse engineering.
+Malware Detection: Google Play Protect and reactive scans remove malicious apps, though proactive detection lags.
+Data Security: Privacy policies are mandatory, and DataStore secures sensitive data, but invalid policies persist.
+Reverse Engineering Methods:
+
+APK Extraction and Decompilation: Tools like APKTool and JADX extract and convert APKs to readable Java/Smali code.
+Dynamic Analysis: Frida and MobSF monitor runtime behavior, intercept traffic, or bypass checks like root detection.
+Bypassing Protections: Modify code to disable root detection, certificate pinning, or Play Integrity checks using Frida or Smali edits.
+Extracting Sensitive Data: Analyze decompiled code or memory dumps to uncover hardcoded keys or insecure storage.
+Modifying Behavior: Edit and recompile APKs to alter functionality (e.g., bypass in-app purchases), signing with custom keys.
+Algorithm Analysis: Tools like Atlas map Play Store algorithms to optimize visibility or exploit rankings.
+Note: Reverse engineering for ethical purposes (e.g., security research) is often legal, but malicious use violates Google’s policies and law.
+
 What are the security measures implemented by app store/play store and what are the reverse engineering methods for them.
 
 
