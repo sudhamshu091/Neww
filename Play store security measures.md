@@ -1,3 +1,18 @@
+Google Play Store Security: Employs automated and manual app reviews, developer verification (e.g., D-U-N-S number), and policies to detect malware and ensure compliance, though proactive monitoring has limitations.
+<br>
+Runtime Protections: Play Integrity API and SafetyNet Attestation verify app installation and device security, while Google Play Protect scans for malicious behavior post-installation.
+<br>
+Developer Tools: Google recommends code obfuscation (ProGuard, DexGuard) and secure storage (DataStore) to protect apps from reverse engineering and data leaks.
+<br>
+Reverse Engineering Process: Involves extracting APKs, decompiling to Java/Smali (using APKTool, JADX), and dynamic analysis (Frida, Burp Suite) to analyze or modify app behavior.
+<br>
+Bypassing Protections: Techniques include disabling root detection, spoofing Play Integrity API, bypassing certificate pinning, and extracting hardcoded data like API keys.
+<br>
+Challenges: Obfuscation, anti-tampering checks, and emulator detection complicate reverse engineering, requiring advanced tools and manual effort.
+<br>
+Legal/Ethical Issues: Ethical reverse engineering aids security but unauthorized modifications or piracy are illegal; Google may ban accounts or flag modified APKs.
+<br>
+ 
  No, only for play store, not app store
 
 
